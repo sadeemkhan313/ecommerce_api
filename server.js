@@ -5,6 +5,9 @@ const PORT = 3000;
 
 // Middleware to parse JSON body
 app.use(express.json());
+app.get("/", (req, res) => {
+  res.send("✅ Server is running on Railway!");
+});
 
 // Dummy product data (15 products)
 let products = [
